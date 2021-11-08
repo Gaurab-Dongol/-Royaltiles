@@ -1,17 +1,17 @@
 // abstracts (global variable, function, mixin and placeholder)
 
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
 // vendors (CSS files from external libraries and frameworks)
 
-@import 'vendors/bootstrap';
+@import "vendors/bootstrap";
+@import "vendors/slick";
 
 // base (boilerplate code)
 
 // @import 'base/reset';
-@import 'base/base';
-
+@import "base/base";
 
 // layout (everything that takes part in laying out the site)
 
@@ -20,10 +20,11 @@
 // component (for smaller components like buttons, carousel, widgets, loader)
 @import "components/wp-classes";
 @import "components/navigation";
+@import "components/typography";
 
+@import "layout/common-layouts";
 
 //page (page-specific styles)
 
-
+@import "pages/front-page";
 //themes
-

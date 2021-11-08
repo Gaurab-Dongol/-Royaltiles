@@ -140,10 +140,55 @@ add_action( 'widgets_init', 'royaltiles_widgets_init' );
  * Enqueue scripts and styles.
  */
 function royaltiles_scripts() {
+
+	$min = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG === false ) ? '.min' : '';
+
+	$main_css = 'assets/css/main' . $min . '.css';
+	$main_js = 'assets/js/main' . $min . '.js';
+	$vendor_js = 'assets/js/vendor' . $min . '.js';
+
 	wp_enqueue_style( 'royaltiles-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'royaltiles-style', 'rtl', 'replace' );
 
+	wp_register_style('teko-font-style', 'https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap', '', _S_VERSION, false);
+	wp_enqueue_style('teko-font-style');
+	wp_register_style('poppins-font-style', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap', '', _S_VERSION, false);
+	wp_enqueue_style('poppins-font-style');
+
+
+
 	wp_enqueue_script( 'royaltiles-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	$main_css_file = 'assets/css/main' . $min . '.css';
+	wp_register_style( 'royaltiles-main-style', get_template_directory_uri() . '/' . $main_css_file );
+	wp_enqueue_style( 'royaltiles-main-style' );
+
+	//Enqueue js script
+	/* Vendor JS */
+	wp_register_script( 'royaltiles-vendor-script', get_template_directory_uri() . '/' . $vendor_js, array('jquery',), _S_VERSION, true );
+	wp_enqueue_script( 'royaltiles-vendor-script' );
+
+	$main_js_file = 'assets/js/main' . $min . '.js';
+	wp_register_script( 'royaltiles-main-script', get_template_directory_uri() . '/' . $main_js_file, array( 'jquery', 'royaltiles-vendor-script' ), _S_VERSION, true );
+	wp_enqueue_script( 'royaltiles-main-script' );
+
+
+
+
+
+
+	// wp_register_script ( 'royaltiles-vendor-script', get_template_directory_uri() . '/assets/js/vendor.min.js' );
+	// wp_enqueue_script ( 'royaltiles-vendor-script' );
+
+	// wp_register_script ( 'royaltiles-main-js', get_template_directory_uri() . '/assets/js/main.js' );
+	// wp_enqueue_script ( 'royaltiles-main-js' );
+
+
+
+
+
+
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

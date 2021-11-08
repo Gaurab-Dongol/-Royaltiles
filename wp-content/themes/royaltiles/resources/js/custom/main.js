@@ -34,4 +34,54 @@
         COMMON.init();
         mainNavigation.init();
     });
+
+/* hero slider */
+    $('.hero-slider').slick({
+        // centerMode: true,
+        slidesToShow: 1,
+        dots: false,
+        prevArrow: "<span class='left-arrow'></span>",
+        nextArrow: "<span class='right-arrow'></span>",
+        // customPaging: function (slick, index) {
+        //     return '<a href="javascript:void(0);">0' + (index + 1) + '</a>';
+        // },
+        responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                arrows: true,
+                centerMode: false
+                // slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: true,
+                centerMode: false,
+                slidesToShow: 1
+            }
+        }
+        ]
+    });
+
+    $('.hamburger').on('click', function () {
+        $('body').toggleClass('menu-open');
+
+    });
+    
+$(document).ready(function(){
+    $('a[href="#search"]').on('click', function(event) {                    
+        $('#search').addClass('open');
+        $('#search > form > input[type="search"]').focus();
+    });                    
+    $( '#search-close' ).click( function(){
+        $( '#search' ).removeClass( 'open' );
+    });
+    $( document ).on( 'keyup', function(e){
+        if( event.keyCode == 27){
+            $( '#search' ).removeClass( 'open' );
+        }  
+    });
+});
 })(jQuery);

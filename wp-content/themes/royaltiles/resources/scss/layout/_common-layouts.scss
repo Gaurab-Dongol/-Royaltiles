@@ -1,0 +1,33 @@
+.link-box {
+  a {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: $color-white;
+    font-family: $font-family-secondary;
+  } 
+}
+
+/* title heading */
+.title-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    .line-sep {
+      height: 1px;
+      background-color: $color-line;
+      width: 100%;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: 0.075px;
+      position: relative;
+      text-align: center;
+      max-width: 210px;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
