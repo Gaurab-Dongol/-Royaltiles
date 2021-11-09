@@ -19,13 +19,14 @@ get_header();
 
 <section class="hero-banner">
     <div class="hero-slider">
+    <div class="item">
+            <img src="<?php echo get_template_directory_uri(). '/images/banner1.jpg'; ?>" alt="" />
+        </div>
         <div class="item">
             <iframe src="https://www.youtube.com/embed/LAtnAtxQ4HQ?autoplay=1&mute=1&controls=0&rel=0" frameborder="0" allow="autoplay; picture-in-picture" title="YouTube Embed"></iframe>
             <!-- <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="360" src="https://www.youtube.com/embed/cfxJVQLZyKw?mute=1&amp;autoplay=1&amp;playsinline=1&amp;loop=1&amp;controls=0&amp;origin=https%3A%2F%2Fgofortress.com&amp;playlist=cfxJVQLZyKw&amp;rel=0&amp;vq=720&amp;enablejsapi=1&amp;widgetid=1"></iframe> -->
         </div>
-        <div class="item">
-            <img src="<?php echo get_template_directory_uri(). '/images/banner1.jpg'; ?>" alt="" />
-        </div>
+        
     </div>
     <div class="link-box">
         <a href="#">Shop Now<span>></span></a>
@@ -33,6 +34,163 @@ get_header();
     <!-- link-box -->
 </section>
 <!-- end of hero banner -->
+
+<section class="shop-category">
+   <div class="container">
+   <div class="title-head">
+            <div class="line-sep"></div>
+            <!-- line-sep -->
+            <h2>Shop by</h2>
+            <div class="line-sep"></div>
+            <!-- line-sep -->
+        </div>
+        <!-- title-head -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="shop-meta-wrap">
+              <a href="#">  <img src="<?php echo get_template_directory_uri(); ?>/images/Color-Control-of-Ceramic-Tiles.jpg" alt="" /></a>
+                <div class="shop-meta-overlay">
+                    <a href="#">Shop All</a>
+                </div><!-- shop-meta-overlay -->
+                </div><!-- shop-meta-wrap -->
+            </div><!-- col -->
+            <div class="col-md-4">
+                <div class="shop-meta-wrap">
+               <a href="#"> <img src="<?php echo get_template_directory_uri(); ?>/images/ceramic-tiles-1000x1000.jpeg" alt="" /></a>
+                <div class="shop-meta-overlay">
+                    <a href="#">Shop Color</a>
+                </div><!-- shop-meta-overlay -->
+                </div><!-- shop-meta-wrap -->
+            </div><!-- col -->
+            <div class="col-md-4">
+                <div class="shop-meta-wrap">
+                <a href="#">  <img src="<?php echo get_template_directory_uri(); ?>/images/6db232317d3b75fccee001c45ff2275c.jpg" alt="" /></a>
+                <div class="shop-meta-overlay">
+                    <a href="#">Shop Shape</a>
+                </div><!-- shop-meta-overlay -->
+                </div><!-- shop-meta-wrap -->
+            </div><!-- col -->
+
+            <div class="col-md-4">
+                <div class="shop-meta-wrap">
+                <a href="#">  <img src="<?php echo get_template_directory_uri(); ?>/images/3baa07cae0380341e97109be7a537e33.jpg" alt="" /></a>
+                <div class="shop-meta-overlay">
+                    <a href="#">Shop Area</a>
+                </div><!-- shop-meta-overlay -->
+                </div><!-- shop-meta-wrap -->
+            </div><!-- col -->
+
+            <div class="col-md-4">
+                <div class="shop-meta-wrap">
+                <a href="#">  <img src="<?php echo get_template_directory_uri(); ?>/images/marazzi_crogiolo_d_segni_blend_005.jpg__360x258_q85_crop_subsampling-2.jpg" alt="" /></a>
+                <div class="shop-meta-overlay">
+                    <a href="#">Shop Pattern</a>
+                </div><!-- shop-meta-overlay -->
+                </div><!-- shop-meta-wrap -->
+            </div><!-- col -->
+
+            <div class="col-md-4">
+                <div class="shop-meta-wrap">
+                <a href="#">  <img src="<?php echo get_template_directory_uri(); ?>/images/82448740-various-ceramic-tiles-samples.jpg" alt="" /></a>
+                <div class="shop-meta-overlay">
+                    <a href="#">Shop Looks</a>
+                </div><!-- shop-meta-overlay -->
+                </div><!-- shop-meta-wrap -->
+            </div><!-- col -->
+        </row><!-- row -->
+   </div><!-- container -->
+</section>
+<!-- end of shop-category -->
+
+<section class="product-slider-wrap">
+    <div class="container">
+    <div class="product-slider">
+        <div class="item">
+            <p>Aussie made</p>
+            <a href="#"> <img src="<?php echo get_template_directory_uri(); ?>/images/cement-tiles-encaustic-greek-terazzo-600w-1717604935.jpg" alt="" />
+                <div class="product-details">
+                    <div class="detail-author">
+                        <span>Navy</span>
+                    <span>Encaustic</span>
+                    <span>300 x 300</span>
+                    </div><!-- detail-author -->
+                    <div class="author-price">
+                        <h3>$40</h3>
+                    </div><!-- author-price -->
+                </div><!-- product-details -->
+                <p class="single-product-detail">See Range</p>
+        </a>
+        </div><!-- item -->
+        <div class="item">
+            <p>Aussie made</p>
+            <a href="#"> <img src="<?php echo get_template_directory_uri(); ?>/images/handmade-encaustic-tulips-blue-fleur-cement-tiles-2.jpg" alt="" />
+                <div class="product-details">
+                    <div class="detail-author">
+                        <span>Navy</span>
+                    <span>Encaustic</span>
+                    <span>300 x 300</span>
+                    </div><!-- detail-author -->
+                    <div class="author-price">
+                        <h3>$40</h3>
+                    </div><!-- author-price -->
+                </div><!-- product-details -->
+                <p class="single-product-detail">See Range</p>
+        </a>
+        </div><!-- item -->
+        <div class="item">
+            <p>Aussie made</p>
+            <a href="#"> <img src="<?php echo get_template_directory_uri(); ?>/images/paris-comedie-porcelain-tile.jpg" alt="" />
+                <div class="product-details">
+                    <div class="detail-author">
+                        <span>Navy</span>
+                    <span>Encaustic</span>
+                    <span>300 x 300</span>
+                    </div><!-- detail-author -->
+                    <div class="author-price">
+                        <h3>$40</h3>
+                    </div><!-- author-price -->
+                </div><!-- product-details -->
+                <p class="single-product-detail">See Range</p>
+        </a>
+        </div><!-- item -->
+        <div class="item">
+            <p>Aussie made</p>
+            <a href="#"> <img src="<?php echo get_template_directory_uri(); ?>/images/istockphoto-545805508-612x612.jpg" alt="" />
+                <div class="product-details">
+                    <div class="detail-author">
+                        <span>Navy</span>
+                    <span>Encaustic</span>
+                    <span>300 x 300</span>
+                    </div><!-- detail-author -->
+                    <div class="author-price">
+                        <h3>$40</h3>
+                    </div><!-- author-price -->
+                </div><!-- product-details -->
+                <p class="single-product-detail">See Range</p>
+        </a>
+        </div><!-- item -->
+        <div class="item">
+            <p>Aussie made</p>
+            <a href="#"> <img src="<?php echo get_template_directory_uri(); ?>/images/paris-comedie-porcelain-tile.jpg" alt="" />
+                <div class="product-details">
+                    <div class="detail-author">
+                        <span>Navy</span>
+                    <span>Encaustic</span>
+                    <span>300 x 300</span>
+                    </div><!-- detail-author -->
+                    <div class="author-price">
+                        <h3>$40</h3>
+                    </div><!-- author-price -->
+                </div><!-- product-details -->
+                <p class="single-product-detail">See Range</p>
+        </a>
+        </div><!-- item -->
+       
+    
+    </div><!-- product-slider -->
+            </div><!-- container -->
+            </section>
+            <!-- end of product-slider-wrap -->
 
 <section class="trending-section">
     <div class="container">
@@ -168,6 +326,86 @@ get_header();
     </div>
     <!-- container -->
 </section>
+<!-- end of trending-section -->
+
+<section class="product-lists">
+    <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/maxresdefault.jpg" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/43c05f1189c02595b15223e22c9cc530.jpg" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/7c76667f2d4caaedf200faeb77ea024a.jpg" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/5d4e8183043bfd00010e07d6.jpg" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/tile-selection-living-room.jpg" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/E00000000773.jpg" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/italian-tiles-for-living-room.png.png" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/1-At-Caesarea.jpg" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+
+                    <div class="col-md-4">
+                        <a href=""><div class="product-single">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/05-Five-Important-Points-While-Choosing-Your-Ceramic-Floor-Tiles.jpg" />
+                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        </div><!-- product-single -->
+            </a>    
+                    </div><!-- col -->
+                </div><!-- row -->
+    </div><!-- container -->
+            </section><!-- product-lists -->
+            <!-- end of product-list -->
 
 <?php
      get_footer();

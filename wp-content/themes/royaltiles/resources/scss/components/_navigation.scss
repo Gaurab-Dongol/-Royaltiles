@@ -107,6 +107,12 @@
   left: 0;
   background: rgba(255, 255, 255, 0.32);
   padding: 15px 0;
+  .site-branding {
+    a {
+      max-width: 130px;
+      width: 100%;
+    }
+  }
   .row {
     width: 100%;
     align-items: center;
@@ -122,6 +128,7 @@
           text-transform: uppercase;
           color: $color-white;
           position: relative;
+          text-shadow: 2px 2px 2px $color-black;
           &:after {
             content: "";
             position: absolute;

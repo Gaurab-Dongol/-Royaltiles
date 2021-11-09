@@ -8,7 +8,7 @@
     @include center(true, true);
     a {
       border: 1px solid $color-white;
-      padding: 22px 47px;
+      padding: 14px 47px;
       background: rgba(215, 215, 215, 0.11);
       span {
         opacity: 0;
@@ -39,7 +39,7 @@
       height: 100%;
       left: 0;
       top: 0;
-      background: rgba(3, 8, 13, 0.62);
+      background: rgba(3, 8, 13, 0.29);
     }
     .slick-slide {
       padding: 0 0 100vh;
@@ -49,6 +49,9 @@
       .item {
         height: 100vh;
         overflow: hidden;
+        img {
+          height: 100%;
+        }
 
         iframe {
           width: 100vw;
@@ -100,13 +103,76 @@
     }
   }
 }
+.search-index {
+  .slick-arrow {
+    z-index: 0;
+  }
+  .link-box {
+    display: none;
+  }
+}
 
+/* shop-category */
+.shop-category {
+  padding-top: 100vh;
+  .shop-meta-wrap {
+    height: 249px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    > a {
+      display: inline-block;
+      // overflow: hidden;
+      height: 100%;
+      width: 100%;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(29, 29, 29, 0.16);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .shop-meta-overlay {
+      @include center(true, true);
+      a {
+        border: 1px solid $color-white;
+        color: $color-white;
+        padding: 6px 16px;
+        transition: 0.3s all;
+        text-shadow: 2px 1px 0px $color-black;
+        font-weight: 300;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+      &:hover {
+        a {
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+}
 
 /* trending-section */
 .trending-section {
   padding-bottom: 50px;
-  // padding-top: 100px;
-  padding-top: 100vh;
+  padding-top: 100px;
+  // padding-top: 100vh;
   .col-md-6 {
     overflow: hidden;
   }
@@ -220,6 +286,101 @@
         display: block;
         font-weight: normal;
       }
+    }
+  }
+}
+/* product-slider-wrap */
+.product-slider-wrap {
+  .product-slider {
+    overflow: hidden;
+    .slick-list {
+      margin: 0 -15px;
+    }
+    .slick-slide {
+      padding: 80px 15px 0 15px;
+
+      .item {
+        padding: 80px 15px 15px 15px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        box-shadow: rgba(0, 0, 0, 0.2);
+        position: relative;
+        transition: 0.3s all;
+        text-align: center;
+        img {
+          display: block;
+          max-width: 200px;
+          height: 307px;
+          object-fit: cover;
+          margin: auto;
+        }
+        > p {
+          position: absolute;
+          right: 0;
+          top: 0;
+          background-color: $color-green;
+          color: $color-white;
+          font-size: 16px;
+          padding: 2px 5px;
+          text-transform: capitalize;
+        }
+        &:hover {
+          transform: translateY(-8px);
+        }
+        // .range-detail {
+        //   background: $color-dark-red;
+        //   color: $color-white;
+        //   font-size: 14px;
+        //   text-transform: uppercase;
+        //   display: inline-block;
+        //   padding: 5px 15px;
+        //   margin-top: 15px;
+        //   border-radius: 3px;
+        // }
+      }
+    }
+    .product-details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      .detail-author {
+        text-align: left;
+        span {
+          display: block;
+          font-size: 16px;
+          color: $color-logo;
+        }
+      }
+      .author-price {
+      }
+    }
+  }
+}
+
+/* product-lists */
+.product-lists {
+  padding-top: 70px;
+  a {
+    transition: 0.3s all;
+    display: inline-block;
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
+  .product-single {
+    height: 548px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 80px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    p {
+      position: absolute;
+      display: inline-block;
+      @include center(true, true);
+      top: 90%;
     }
   }
 }
