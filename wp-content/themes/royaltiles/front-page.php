@@ -19,13 +19,17 @@ get_header();
 
 <section class="hero-banner">
     <div class="hero-slider">
+    <?php
+        $args = array( 'post_type' => 'dynamic_slider');
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+    ?>
     <div class="item">
-            <img src="<?php echo get_template_directory_uri(). '/images/banner1.jpg'; ?>" alt="" />
+    <?php the_post_thumbnail();?>
         </div>
-        <div class="item">
-            <iframe src="https://www.youtube.com/embed/LAtnAtxQ4HQ?autoplay=1&mute=1&controls=0&rel=0" frameborder="0" allow="autoplay; picture-in-picture" title="YouTube Embed"></iframe>
-            <!-- <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="360" src="https://www.youtube.com/embed/cfxJVQLZyKw?mute=1&amp;autoplay=1&amp;playsinline=1&amp;loop=1&amp;controls=0&amp;origin=https%3A%2F%2Fgofortress.com&amp;playlist=cfxJVQLZyKw&amp;rel=0&amp;vq=720&amp;enablejsapi=1&amp;widgetid=1"></iframe> -->
-        </div>
+    <?php
+        endwhile;
+    ?>
         
     </div>
     <div class="link-box">

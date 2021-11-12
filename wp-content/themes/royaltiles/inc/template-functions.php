@@ -35,3 +35,22 @@ function royaltiles_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'royaltiles_pingback_header' );
+
+//Dynamic Slider
+add_theme_support('post-thumbnails');
+add_post_type_support( 'dynamic_slider', 'thumbnail' ); 
+function custom_dynamic_slider() {
+	register_post_type( 'dynamic_slider',
+	  array(
+		'labels' => array(
+		  'name' => __( 'Slider' ),
+		  'singular_name' => __( 'Slide' )
+		),
+		'public' => true,
+		'has_archive' => true,
+	  )
+	);	
+  }
+  add_action( 'init', 'custom_dynamic_slider' );
+
+
