@@ -101,16 +101,21 @@
 }
 
 .site-header {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
   left: 0;
-  background: rgba(255, 255, 255, 0.32);
+  top: 36px;
+  // background: rgba(255, 255, 255, 0.32);
+  background: $color-white;
   padding: 15px 0;
+  z-index: 99;
+  transition: 0.3s all;
   .site-branding {
     a {
       max-width: 130px;
       width: 100%;
+      transition: 0.3s all;
     }
   }
   .row {
@@ -124,11 +129,14 @@
       justify-content: end;
       li {
         margin-right: 50px;
+        transition: 0.3s all;
         a {
           text-transform: uppercase;
-          color: $color-white;
+          color: $color-logo;
           position: relative;
-          text-shadow: 2px 2px 2px $color-black;
+          font-weight: 500;
+          // text-shadow: 2px 2px 2px $color-black;
+          transition: 0.3s all;
           &:after {
             content: "";
             position: absolute;
@@ -154,8 +162,41 @@
         // }
       }
     }
+    .shop-icon-menu {
+      margin-right: 50px;
+      &:focus {
+        outline: none;
+      }
+      i {
+        color: $color-logo;
+        font-size: 22px;
+      }
+    }
     .search-main {
       width: 20px;
+      svg {
+        .st0 {
+          fill: $color-logo;
+        }
+      }
+    }
+  }
+}
+.sticky {
+  box-shadow: 8px 10px 7px -12px $color-black;
+  .site-branding {
+    a {
+      width: 85px;
+    }
+  }
+  .main-navigation {
+    ul {
+      li {
+        margin-right: 35px;
+        a {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
@@ -310,4 +351,33 @@ textarea:-webkit-autofill:hover {
   -webkit-box-shadow: 0 0 0 1000px transparent inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+.top-bar {
+  background: $color-logo;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 6px 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    display: flex;
+    li {
+      list-style: none;
+      margin-right: 30px;
+      a {
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 600;
+        i {
+          color: $color-white;
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }

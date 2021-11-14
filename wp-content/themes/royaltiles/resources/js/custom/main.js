@@ -73,11 +73,60 @@
 
 supportSVG.init();
 
+    // Sticky Header and back to top
+    var stickyHeader = {
+        init: function () {
+            this.cacheDOM();
+            this.eventListener();
+        },
+        cacheDOM: function () {
+            this.$html = $('html, body');
+            this.$header = $(".site-header");
+            this.$body = $("body");
+            this.$backToTop = $('.back-top-icon');
+        },
+        eventListener: function () {
+            this.$backToTop.hide();
+            $(window).on('scroll load', this.stickyCall.bind(this));
+            this.$backToTop.on('click', this.backToTop.bind(this) );
+        },
+        stickyCall: function () {
+            var windowScrolled = $(window).scrollTop();
+            if (windowScrolled >= 50) {
+                this.$header.addClass("sticky");
+                this.$backToTop.fadeIn(200);
+            } else {
+                this.$header.removeClass("sticky");
+                this.$backToTop.fadeOut(200);
+            }
+        },
+        backToTop: function() {
+            this.$html.animate({ scrollTop: 0 }, 700);
+            return false;
+        }
+    };
+
+    $(function () {
+        COMMON.init();
+        mainNavigation.init();
+        stickyHeader.init();
+        // annotationListLoadMore.init();
+        // keywordListLoadMore.init();
+        // authorListLoadMore.init();
+        // authorResultsLoadMore.init();
+        defaultResultsLoadMore.init();
+    });
+
 /* hero slider */
     $('.hero-slider').slick({
         // centerMode: true,
         slidesToShow: 1,
         dots: false,
+        autoplay: true,
+        speed: 5000,
+        infinite: true,
+        fade: true,
+        autoplaySpeed: 3000,
         prevArrow: "<span class='left-arrow'></span>",
         nextArrow: "<span class='right-arrow'></span>",
         // customPaging: function (slick, index) {
@@ -108,6 +157,8 @@ supportSVG.init();
         slidesToShow: 4,
         dots: false,
         arrows:true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: "<span class='left-arrow arrow-common'></span>",
         nextArrow: "<span class='right-arrow arrow-common'></span>",
         // customPaging: function (slick, index) {
@@ -148,6 +199,50 @@ supportSVG.init();
 
     });
 
+    $('.tesimonial-slide').slick({
+        dots: true,
+        arrows: false,
+          // autoplay: true,
+          infinite: true,
+          speed: 3000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4000,
+        });
+
+        $('.client-slide').slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+              // autoplay: true,
+              infinite: true,
+              speed: 800,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              // centerMode: true,
+              centerPadding:50,
+            });
+
+
+     /** change value here to adjust parallax level */
+     var parallax = -0.3;
+
+     var $bg_images = $(".attatchement-wallpaper");
+     var offset_tops = [];
+     $bg_images.each(function (i, el) {
+         offset_tops.push($(el).offset().top);
+     });
+ 
+     $(window).scroll(function () {
+         var dy = $(this).scrollTop();
+         $bg_images.each(function (i, el) {
+             var ot = offset_tops[i];
+             $(el).css("background-position", "50% " + (dy - ot) * parallax + "px");
+         });
+     });
+ 
     
     
 $(document).ready(function(){

@@ -17,7 +17,7 @@
 .title-head {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   .line-sep {
     height: 1px;
     background-color: $color-line;
@@ -78,5 +78,74 @@
   transition: 0.3s all;
   &:hover {
     background-color: $color-logo;
+  }
+}
+
+/* links */
+.common-link {
+  a {
+    border: 2px solid $color-logo;
+    padding: 15px 65px;
+    position: relative;
+    transition: 0.4s all;
+    display: inline-block;
+    color: $color-logo;
+    z-index: 1;
+    font-weight: 600;
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $color-logo;
+      width: 0;
+      height: 100%;
+      left: 0;
+      top: 0;
+      transition: 0.4s all;
+      z-index: -1;
+    }
+    &:hover {
+      color: $color-white;
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* slick dots */
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  // @include center(false, true);
+  // left: 6%;
+  display: flex;
+  position: absolute;
+  bottom: -13%;
+  position: absolute;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  li {
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    // border-radius: 50%;
+    border: 2px solid $color-logo;
+    margin-right: 10px;
+    cursor: pointer;
+    button {
+      height: 0;
+      width: 0;
+      font-size: 0;
+      border: none;
+      visibility: hidden;
+    }
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+  .slick-active {
+    background-color: #303030;
   }
 }

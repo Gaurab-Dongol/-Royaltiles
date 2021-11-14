@@ -262,11 +262,15 @@
       }
     }
   }
+  .common-link {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
 
 /* icon-info-wrap */
 .icon-info-wrap {
-  padding-top: 50px;
+  padding-top: 100px;
   // padding-bottom: 90px;
   .icon-info-blk {
     text-align: center;
@@ -381,6 +385,197 @@
       display: inline-block;
       @include center(true, true);
       top: 90%;
+    }
+  }
+}
+
+/* attatchement-wallpaper */
+.attatchement-wallpaper {
+  background-image: url("../../images/bg-cta-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0 110px 0;
+  min-height: 534px;
+  background-attachment: fixed;
+  .wallpaper-heading {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    h3 {
+      font-size: 48px;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1.20833em;
+      letter-spacing: 0.05px;
+      color: $color-white;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71429em;
+      letter-spacing: 0.075px;
+      color: $color-white;
+      margin-bottom: 50px;
+    }
+  }
+  .common-link {
+    text-align: center;
+    a {
+      color: $color-white;
+    }
+  }
+}
+
+/* testimonial slider */
+.testimonial {
+  padding-bottom: 10px;
+  position: relative;
+  padding-top: 60px;
+  .tesimonial-slide {
+    .item {
+      text-align: center;
+      padding: 30px 280px;
+      box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.17);
+      margin-bottom: 30px;
+      margin-top: 30px;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        top: -5px;
+        width: 97%;
+        left: 0;
+        height: 10px;
+        background: #f4f4f4;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        top: -15px;
+        height: 10px;
+        width: 93%;
+        background: #e8e8e8;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      img {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        margin: 0 auto;
+        margin-bottom: 18px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 26px;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: 400;
+        span {
+          font-size: 14px;
+          display: block;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+/* grid-view-two-col */
+.grid-view-two-col {
+  // background-color: $color-light-orange;
+  padding-top: 80px;
+  .container {
+    max-width: 100%;
+  }
+  .custom-row {
+    display: flex;
+  }
+  .col-grid-cus {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .left-col-img {
+    height: 100%;
+    overflow: hidden;
+    height: 650px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 2.5s all;
+      overflow: hidden;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+  .right-col-detail {
+    text-align: center;
+    background-color: #c9ac7f;
+    height: 100%;
+    padding: 120px 70px;
+    @media (min-width: 1500px) {
+      padding-right: calc((100vw - 1330px) / 2);
+    }
+    p,
+    h3,
+    h5 {
+      color: $color-white;
+      letter-spacing: 1;
+    }
+    h5 {
+      margin-bottom: 20px;
+    }
+    h3 {
+      margin-bottom: 40px;
+      font-size: 45px;
+      line-height: 1;
+    }
+    p {
+      margin-bottom: 50px;
+    }
+    .common-link {
+      a {
+        display: inline-block;
+        color: $color-white;
+        z-index: 1;
+        border: 2px solid $color-white;
+      }
+    }
+  }
+}
+
+/* client */
+/*client*/
+.client {
+  padding-top: 95px;
+  padding-bottom: 80px;
+  .client-slide {
+    padding-bottom: 50px;
+    .slick-slide {
+      margin-right: 40px;
+    }
+    .item {
+      border: 1px solid black;
+      img {
+        margin: 0 auto;
+        opacity: 0.5;
+        transition: 0.3s all;
+        &:hover {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+      }
     }
   }
 }

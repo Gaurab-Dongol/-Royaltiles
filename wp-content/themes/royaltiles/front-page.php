@@ -13,6 +13,7 @@
  */
 
 get_header();
+
 ?>
 
 <div class="hamburger"></div>
@@ -227,13 +228,16 @@ get_header();
                         </div>
                         <!-- right-grid-image -->
                         <div class="portfolio-content">
-                            <h5>Lorem ipsum</h5>
+                            <h5>Royal 1</h5>
                             <p>
                                 <span>$400.00 $500.00</span>
                                 $500.00
                             </p>
                         </div>
                         <!-- portfolio-content -->
+                        
+
+
                     </div>
                     <!-- col -->
                     <div class="col-md-6 wow slideInRight">
@@ -247,7 +251,7 @@ get_header();
                         </div>
                         <!-- right-grid-image -->
                         <div class="portfolio-content">
-                            <h5>Lorem ipsum</h5>
+                            <h5>Royal 2</h5>
                             <p>$500.00</p>
                         </div>
                         <!-- portfolio-content -->
@@ -264,7 +268,7 @@ get_header();
                         </div>
                         <!-- right-grid-image -->
                         <div class="portfolio-content">
-                            <h5>Lorem ipsum</h5>
+                            <h5>Royal 3</h5>
                             <p>$500.00</p>
                         </div>
                         <!-- portfolio-content -->
@@ -281,7 +285,7 @@ get_header();
                         </div>
                         <!-- right-grid-image -->
                         <div class="portfolio-content">
-                            <h5>Lorem ipsum</h5>
+                            <h5>Royal 4</h5>
                             <p>$500.00</p>
                         </div>
                         <!-- portfolio-content -->
@@ -289,10 +293,16 @@ get_header();
                     <!-- col -->
                 </div>
                 <!-- right-grid-wrap -->
+                <div class="common-link">
+            <a href="#">SHOW ALL PRODUCTS</a>
+          </div>
+          <!-- common-link -->
             </div>
             <!-- col -->
         </div>
         <!-- row -->
+
+    
         <div class="icon-info-wrap">
             <div class="row">
                 <div class="col-md-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -304,22 +314,22 @@ get_header();
                 </div>
                 <div class="col-md-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                     <div class="icon-info-blk">
-                        <i class="fa fa-bus" aria-hidden="true"></i>
-                        <p>FAST DELIVERY<span>Within 1-2 business days</span></p>
+                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+         <p>TOP QUALITY<span>We only source from the best</span></p>
                     </div>
                     <!-- icon-info-blk -->
                 </div>
                 <div class="col-md-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="icon-info-blk">
-                        <i class="fa fa-bus" aria-hidden="true"></i>
-                        <p>FAST DELIVERY<span>Within 1-2 business days</span></p>
+                    <i class="fa fa-money" aria-hidden="true"></i>
+       <p>BEST PRICES<span>Lowest prices and clearances</span></p>
                     </div>
                     <!-- icon-info-blk -->
                 </div>
                 <div class="col-md-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
                     <div class="icon-info-blk">
-                        <i class="fa fa-bus" aria-hidden="true"></i>
-                        <p>FAST DELIVERY<span>Within 1-2 business days</span></p>
+                    <i class="fa fa-envira" aria-hidden="true"></i>
+     <p>ECO FRIENDLY IMPORTER<span>Preserving the environment</span></p>
                     </div>
                     <!-- icon-info-blk -->
                 </div>
@@ -410,6 +420,141 @@ get_header();
     </div><!-- container -->
             </section><!-- product-lists -->
             <!-- end of product-list -->
+
+                <section class="attatchement-wallpaper">
+        <div class="container">
+          <div class="wallpaper-heading">
+            <h3>
+              GET NEW & AMAZING<br />
+              TILES FROM US!
+            </h3>
+            <p>
+              Coverur offers lots of great flooring solutions for home owners.
+              Whether you prefer laminate or natural stone flooring, our experts
+              can manufacture and install anything you like!
+            </p>
+          </div>
+          <!-- wallpaper-heading -->
+          <div class="common-link">
+            <a href="#">CLICK HERE</a>
+          </div>
+          <!-- common-link -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- end of attatchement-wallpaper -->
+
+      <section class="grid-view-two-col">
+          <div class="custom-row">
+            <div class="col-grid-cus wow slideInLeft">
+              <div class="left-col-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/7c76667f2d4caaedf200faeb77ea024a.jpg" />
+              </div>
+              <!-- left-col-img -->
+            </div>
+            <!-- col-grid-cus -->
+            <div class="col-grid-cus wow slideInRight">
+              <div class="right-col-detail">
+                <h5
+                class="wow fadeIn"
+                data-wow-duration="0.5"
+                data-wow-delay="1s"
+                >
+                Natural Stones
+              </h5>
+              <h3
+              class="wow fadeInDown"
+              data-wow-duration="0.5"
+              data-wow-delay="0.6s"
+              >
+              OUR TILES
+            </h3>
+            <p
+            class="wow fadeInUp"
+            data-wow-duration="0.5"
+            data-wow-delay="0.8s"
+            >
+            We have an extensive range of stock including natural stone tiles and pavers, stone wall cladding, porcelain and ceramic tiles and an array of stunning decorative features and mosaics. Our representatives are constantly sourcing tiles and stone from our large portfolio of contacts, in order to satisfy your specific needs.
+          </p>
+          <div class="common-link">
+            <a href="#">Read More</a>
+          </div>
+          <!-- common-link -->
+        </div>
+        <!-- right-col-detail -->
+      </div>
+      <!-- col-grid-cus -->
+    </div>
+    <!-- custom-row -->
+</section>  
+<!-- end of grid-view-two-col -->
+
+      <section class="testimonial">
+        <div class="container">
+          <div class="title-head">
+            <div class="line-sep"></div>
+            <!-- line-sep -->
+            <h2>WHAT PEOPLE SAY</h2>
+            <div class="line-sep"></div>
+            <!-- line-sep -->
+          </div>
+          <!-- title-head -->
+
+          <div class="tesimonial-slide">
+            <div class="item">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/user-16-100x100.jpg" />
+              <p class="wow fadeInRightBig">Fantastic service from start to finish. After our ceiling collapsed we never thought our damaged floor would look so good again. These guys worked in a tight time frame and were very accommodating to the other trades working in the same area to produce brilliant results and restore our badly damaged floor to look like new!</p>
+              <h3 class="wow fadeInUpBig">ANNA CARTER <span>Client</span></h3>
+            </div>
+            <!-- item -->
+            <div class="item">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/user-16-100x100.jpg" />
+              <p>Fantastic service from start to finish. After our ceiling collapsed we never thought our damaged floor would look so good again. These guys worked in a tight time frame and were very accommodating to the other trades working in the same area to produce brilliant results and restore our badly damaged floor to look like new!</p>
+              <h3>ANNA CARTER <span>Client</span></h3>
+            </div>
+            <!-- item -->
+          </div>
+          <!-- testimonial-slide -->
+        </div><!-- container -->
+      </section>
+<!-- end of testimonial -->
+
+
+      <section class="client">
+  <div class="container">
+   <div class="title-head">
+    <div class="line-sep"></div>
+    <!-- line-sep -->
+    <h2>THE Range | The Quality</h2>
+    <div class="line-sep"></div>
+    <!-- line-sep -->
+  </div>
+  <!-- title-head -->
+  <div class="client-slide wow fadeInUp">
+    <div class="item">
+    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-1-270x145.png" /> </a>
+    </div><!-- item -->
+    <div class="item">
+    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-2-270x145.png" /> </a>
+   </div><!-- item -->
+   <div class="item">
+   <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-3-270x145.png" /> </a>
+  </div><!-- item -->
+  <div class="item">
+  <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-1-270x145.png" /> </a>
+  </div><!-- item -->
+  <div class="item">
+  <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-3-270x145.png" /> </a>
+  </div><!-- item -->
+  <div class="item">
+  <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-1-270x145.png" /> </a>
+  </div><!-- item -->
+
+</div>
+<!-- client-slide -->
+</div><!-- container -->
+</section>
+
 
 <?php
      get_footer();
