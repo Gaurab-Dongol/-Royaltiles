@@ -310,6 +310,21 @@
       display: block;
     }
   }
+  .trending-slide {
+    .slick-list,
+    .slick-track,
+    .slick-slide {
+      height: 100%;
+    }
+    .slick-slide {
+      > div {
+        height: 100%;
+      }
+      .item {
+        height: 100%;
+      }
+    }
+  }
 }
 
 /* icon-info-wrap */
@@ -573,7 +588,7 @@
 /* grid-view-two-col */
 .grid-view-two-col {
   // background-color: $color-light-orange;
-  // padding-top: 80px;
+  padding-top: 80px;
   .container {
     max-width: 100%;
   }

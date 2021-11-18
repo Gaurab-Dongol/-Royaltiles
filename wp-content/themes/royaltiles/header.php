@@ -33,7 +33,7 @@ section and everything up until
                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
         </div><!-- top-bar -->
-        <div class="animation-roll-out">
+        <!-- <div class="animation-roll-out">
             <div class="first-roll spin-roll"></div>
             <div class="loader-text text1">
                 <h1>ROYAL</h1>
@@ -42,7 +42,7 @@ section and everything up until
                 <h1>TILES</h1>
             </div>
             <div class="second-roll spin-roll"></div>
-        </div><!-- loader -->
+        </div> -->
         <header id="masthead" class="site-header">
             <div class="container-fluid">
 

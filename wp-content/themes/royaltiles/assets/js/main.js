@@ -316,6 +316,22 @@ supportSVG.init();
                     //     ]
                     });
 
+                    $('.trending-slide').slick({
+                        dots: false,
+                        arrows: true,
+                        autoplay: true,
+                        autoplaySpeed:2000,
+                          infinite: true,
+                          speed: 800,
+                          prevArrow: "<span class='left-arrow arrow-common'></span>",
+                          nextArrow: "<span class='right-arrow arrow-common'></span>",
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
+                          // centerMode: true,
+                          centerPadding:50
+                        });
+    
+
 
      /** change value here to adjust parallax level */
      var parallax = -0.3;
@@ -353,11 +369,11 @@ supportSVG.init();
 
     new WOW().init();
 
-    $(window).on('load', function() {
-        setTimeout(function(){
-            $("body").addClass("loader-off");
-       },6000);
-       });
+    // $(window).on('load', function() {
+    //     setTimeout(function(){
+    //         $("body").addClass("loader-off");
+    //    },6000);
+    //    });
     
 })(jQuery);
 

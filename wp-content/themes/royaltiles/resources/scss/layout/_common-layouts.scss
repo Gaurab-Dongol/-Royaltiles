@@ -151,18 +151,18 @@
 }
 
 /* loader */
-.loader-off {
-  .animation-roll-out {
-    opacity: 0;
-    visibility: hidden;
-    z-index: -111111;
-    background: transparent;
-  }
-}
+// .loader-off {
+//   .animation-roll-out {
+//     opacity: 0;
+//     visibility: hidden;
+//     z-index: -111111;
+//     background: transparent;
+//   }
+// }
 
-body {
-  overflow: hidden;
-  &.loader-off {
-    overflow: auto;
-  }
-}
+// body {
+//   overflow: hidden;
+//   &.loader-off {
+//     overflow: auto;
+//   }
+// }

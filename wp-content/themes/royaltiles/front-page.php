@@ -233,8 +233,22 @@ get_header();
         <!-- title-head -->
         <div class="row">
             <div class="col-md-6">
-                <div class="trending-left-img wow slideInLeft">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/image-map-1-570x715.jpg" class="svg" />
+                <div class="trending-left-img wow slideInLeft trending-slide">
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/image-map-1-570x715.jpg"
+                            class="svg" />
+                    </div><!-- item -->
+                    <div class="item">
+                        <img
+                            src="<?php echo get_template_directory_uri(); ?>/images/7c76667f2d4caaedf200faeb77ea024a.jpg" />
+                    </div><!-- item -->
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/5d4e8183043bfd00010e07d6.jpg" />
+                    </div><!-- item -->
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/1-At-Caesarea.jpg" />
+                    </div><!-- item -->
+
                 </div>
                 <!-- trending-left-img -->
             </div>
@@ -597,41 +611,7 @@ get_header();
 </section>
 <!-- end of testimonial -->
 
-<section class="client">
-    <div class="container">
-        <div class="title-head">
-            <div class="line-sep"></div>
-            <!-- line-sep -->
-            <h2>THE Range | The Quality</h2>
-            <div class="line-sep"></div>
-            <!-- line-sep -->
-        </div>
-        <!-- title-head -->
-        <div class="client-slide wow animate__fadeInUp">
-            <div class="item">
-                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-1-270x145.png" /> </a>
-            </div><!-- item -->
-            <div class="item">
-                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-2-270x145.png" /> </a>
-            </div><!-- item -->
-            <div class="item">
-                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-3-270x145.png" /> </a>
-            </div><!-- item -->
-            <div class="item">
-                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-1-270x145.png" /> </a>
-            </div><!-- item -->
-            <div class="item">
-                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-3-270x145.png" /> </a>
-            </div><!-- item -->
-            <div class="item">
-                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/clients-1-270x145.png" /> </a>
-            </div><!-- item -->
 
-        </div>
-        <!-- client-slide -->
-    </div><!-- container -->
-</section>
-<!-- end of client -->
 
 <section class="grid-view-two-col">
     <div class="custom-row">
