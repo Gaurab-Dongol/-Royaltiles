@@ -6,10 +6,17 @@
   .link-box {
     position: absolute;
     @include center(true, true);
+    @include breakpoint(small) {
+      top: 80%;
+    }
     a {
       border: 1px solid $color-white;
       padding: 14px 47px;
       background: rgba(215, 215, 215, 0.11);
+      @include breakpoint(small) {
+        padding: 14px 20px;
+        font-size: 14px;
+      }
       span {
         opacity: 0;
         visibility: hidden;
@@ -17,6 +24,9 @@
         padding-left: 0;
         font-family: $font-family-secondary;
         font-size: 20px;
+        @include breakpoint(small) {
+          display: none;
+        }
       }
       &:hover {
         span {
@@ -51,6 +61,8 @@
         overflow: hidden;
         img {
           height: 100%;
+          width: 100%;
+          object-fit: cover;
         }
 
         iframe {
@@ -98,6 +110,9 @@
   .right-arrow {
     right: 5%;
     transform: scale(-1);
+    @include breakpoint(small) {
+      top: 46%;
+    }
     &:hover {
       right: 4%;
     }
@@ -115,6 +130,7 @@
 /* shop-category */
 .shop-category {
   padding-top: 100vh;
+  margin-top: 50px;
   .shop-meta-wrap {
     height: 249px;
     overflow: hidden;
@@ -150,6 +166,9 @@
         transition: 0.3s all;
         text-shadow: 2px 1px 0px $color-black;
         font-weight: 300;
+        @include breakpoint(small) {
+          padding: 6px 12px;
+        }
         &:after {
           content: "";
           position: absolute;
@@ -173,6 +192,9 @@
   padding-bottom: 50px;
   padding-top: 100px;
   // padding-top: 100vh;
+  @include breakpoint(small) {
+    padding-bottom: 0;
+  }
   .col-md-6 {
     overflow: hidden;
   }
@@ -197,8 +219,13 @@
   }
   .trending-left-img {
     height: 715px;
+    @include breakpoint(small) {
+      height: 350px;
+      margin-bottom: 50px;
+    }
     img {
       height: 100%;
+      width: 100%;
       object-fit: cover;
     }
   }
@@ -245,6 +272,9 @@
   .portfolio-content {
     text-align: center;
     margin-bottom: 80px;
+    @include breakpoint(small) {
+      margin-bottom: 40px;
+    }
     h5 {
       margin-bottom: 0;
       font-size: 24px;
@@ -265,6 +295,20 @@
   .common-link {
     margin-top: 60px;
     text-align: center;
+    @include breakpoint(small) {
+      margin-top: 30px;
+    }
+  }
+  .for-desktop-layout {
+    @include breakpoint(small) {
+      display: none;
+    }
+  }
+  .responsive-trending-slide {
+    display: none;
+    @include breakpoint(small) {
+      display: block;
+    }
   }
 }
 
@@ -272,12 +316,18 @@
 .icon-info-wrap {
   padding-top: 100px;
   // padding-bottom: 90px;
+  @include breakpoint(small) {
+    padding-top: 50px;
+  }
   .icon-info-blk {
     text-align: center;
     border-style: double;
     border-width: 7px;
     padding: 20px 0;
     border-color: $color-line;
+    @include breakpoint(small) {
+      margin-bottom: 35px;
+    }
     i {
       font-size: 30px;
       margin-bottom: 18px;
@@ -366,6 +416,7 @@
   a {
     transition: 0.3s all;
     display: inline-block;
+    width: 100%;
     &:hover {
       transform: translateY(-8px);
     }
@@ -376,15 +427,31 @@
     border: 1px solid rgba(0, 0, 0, 0.125);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 80px;
+    @include breakpoint(small) {
+      height: 250px;
+      margin-bottom: 50px;
+    }
     img {
       height: 100%;
       object-fit: cover;
+      width: 100%;
     }
     p {
       position: absolute;
       display: inline-block;
       @include center(true, true);
       top: 90%;
+    }
+  }
+  .product-list-slide {
+    overflow: hidden;
+    .slick-list {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    .slick-slide {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 }
@@ -398,6 +465,11 @@
   padding: 110px 0 110px 0;
   min-height: 534px;
   background-attachment: fixed;
+  @include breakpoint(medium) {
+    background-position: inherit !important;
+    background-attachment: inherit !important;
+  }
+
   .wallpaper-heading {
     max-width: 570px;
     width: 100%;
@@ -442,6 +514,15 @@
       margin-bottom: 30px;
       margin-top: 30px;
       position: relative;
+      @include breakpoint(wide) {
+        padding: 30px 80px;
+      }
+      @include breakpoint(medium) {
+        padding: 30px 40px;
+      }
+      @include breakpoint(small) {
+        padding: 30px 30px;
+      }
       &:after {
         position: absolute;
         content: "";
@@ -492,21 +573,30 @@
 /* grid-view-two-col */
 .grid-view-two-col {
   // background-color: $color-light-orange;
-  padding-top: 80px;
+  // padding-top: 80px;
   .container {
     max-width: 100%;
   }
   .custom-row {
     display: flex;
+    flex-wrap: wrap;
   }
   .col-grid-cus {
     flex: 0 0 50%;
     max-width: 50%;
+    @include breakpoint(medium) {
+      flex: inherit;
+      max-width: 100%;
+      width: 100%;
+    }
   }
   .left-col-img {
     height: 100%;
     overflow: hidden;
     height: 650px;
+    @include breakpoint(medium) {
+      height: 300px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -527,6 +617,9 @@
     @media (min-width: 1500px) {
       padding-right: calc((100vw - 1330px) / 2);
     }
+    @include breakpoint(small) {
+      padding: 50px 15px;
+    }
     p,
     h3,
     h5 {
@@ -535,14 +628,21 @@
     }
     h5 {
       margin-bottom: 20px;
+      font-family: $font-family-secondary;
     }
     h3 {
       margin-bottom: 40px;
       font-size: 45px;
       line-height: 1;
+      @include breakpoint(small) {
+        margin-bottom: 20px;
+      }
     }
     p {
       margin-bottom: 50px;
+      @include breakpoint(small) {
+        margin-bottom: 30px;
+      }
     }
     .common-link {
       a {
@@ -560,17 +660,29 @@
 .client {
   padding-top: 95px;
   padding-bottom: 80px;
+  @include breakpoint(small) {
+    padding-bottom: 0;
+  }
   .client-slide {
     padding-bottom: 50px;
     .slick-slide {
       margin-right: 40px;
+      @include breakpoint(small) {
+        margin-right: 0;
+      }
     }
     .item {
       border: 1px solid black;
+      @include breakpoint(small) {
+        border: none;
+      }
       img {
         margin: 0 auto;
         opacity: 0.5;
         transition: 0.3s all;
+        @include breakpoint(small) {
+          opacity: 1;
+        }
         &:hover {
           transform: scale(1.2);
           opacity: 1;

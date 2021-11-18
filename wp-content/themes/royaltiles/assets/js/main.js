@@ -123,10 +123,10 @@ supportSVG.init();
         slidesToShow: 1,
         dots: false,
         autoplay: true,
-        speed: 5000,
+        speed: 2000,
         infinite: true,
         fade: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 1000,
         prevArrow: "<span class='left-arrow'></span>",
         nextArrow: "<span class='right-arrow'></span>",
         // customPaging: function (slick, index) {
@@ -168,13 +168,22 @@ supportSVG.init();
         {
             breakpoint: 1200,
             settings: {
+                slidesToShow: 3,
                 arrows: true,
                 centerMode: false
                 // slidesToShow: 2
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 991,
+            settings: {
+                arrows: true,
+                centerMode: false,
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 767,
             settings: {
                 arrows: true,
                 centerMode: false,
@@ -223,7 +232,89 @@ supportSVG.init();
               slidesToScroll: 1,
               // centerMode: true,
               centerPadding:50,
+
+              responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        centerMode: false
+                        // slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 1
+                    }
+                }
+                ]
             });
+
+            $('.product-list-slide').slick({
+                dots: false,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: "<span class='left-arrow arrow-common'></span>",
+                nextArrow: "<span class='right-arrow arrow-common'></span>",
+                  // autoplay: true,
+                  infinite: true,
+                  speed: 800,
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  // centerMode: true,
+                  centerPadding:50,
+    
+                  responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                            centerMode: false
+                            // slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            centerMode: false,
+                            slidesToShow: 1
+                        }
+                    }
+                    ]
+                });
+
+                $('.responsive-trending-slide').slick({
+                    dots: false,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed:1000,
+                      infinite: true,
+                      speed: 800,
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      // centerMode: true,
+                      centerPadding:50
+        
+                    //   responsive: [
+                    //     {
+                    //         breakpoint: 767,
+                    //         settings: {
+                    //             centerMode: false,
+                    //             slidesToShow: 1
+                    //         }
+                    //     }
+                    //     ]
+                    });
 
 
      /** change value here to adjust parallax level */
@@ -245,7 +336,7 @@ supportSVG.init();
  
     
     
-$(document).ready(function(){
+/* nav search */
     $('a[href="#search"]').on('click', function(event) {                    
         $('#search').addClass('open');
         $('#search > form > input[type="search"]').focus();
@@ -258,5 +349,16 @@ $(document).ready(function(){
             $( '#search' ).removeClass( 'open' );
         }  
     });
-});
+
+
+    new WOW().init();
+
+    $(window).on('load', function() {
+        setTimeout(function(){
+            $("body").addClass("loader-off");
+       },6000);
+       });
+    
 })(jQuery);
+
+

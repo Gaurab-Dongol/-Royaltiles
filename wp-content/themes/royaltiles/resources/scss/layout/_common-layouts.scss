@@ -24,7 +24,7 @@
     width: 100%;
   }
   h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 1;
@@ -147,5 +147,22 @@
   }
   .slick-active {
     background-color: #303030;
+  }
+}
+
+/* loader */
+.loader-off {
+  .animation-roll-out {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -111111;
+    background: transparent;
+  }
+}
+
+body {
+  overflow: hidden;
+  &.loader-off {
+    overflow: auto;
   }
 }
