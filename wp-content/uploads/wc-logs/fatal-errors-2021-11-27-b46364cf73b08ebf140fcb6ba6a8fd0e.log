@@ -1,0 +1,6 @@
+2021-11-27T09:17:29+00:00 CRITICAL syntax error, unexpected 'die' (T_EXIT), expecting identifier (T_STRING) in C:\xampp\htdocs\royaltiles\wp-content\themes\royaltiles\sidebar.php on line 14
+
+2021-11-27T09:17:32+00:00 CRITICAL syntax error, unexpected 'die' (T_EXIT), expecting identifier (T_STRING) in C:\xampp\htdocs\royaltiles\wp-content\themes\royaltiles\sidebar.php on line 14
+
+2021-11-27T10:14:25+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\royaltiles\wp-content\themes\royaltiles\woocommerce\archive-category-product.php on line 49
+

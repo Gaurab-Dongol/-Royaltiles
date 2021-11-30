@@ -13212,6 +13212,32 @@ h1, h2, h3, h4, h5, h6 {
               width: 100%; }
           .site-header .main-navigation ul li a:focus {
             outline: none; }
+      .site-header .main-navigation ul .menu-item-has-children a:hover {
+        color: #62352e; }
+      .site-header .main-navigation ul .menu-item-has-children > a::before {
+        content: "\f107";
+        font: normal normal normal 14px/1 FontAwesome;
+        position: absolute;
+        font-size: 20px;
+        color: #b79054;
+        right: -20px;
+        top: 2px; }
+      .site-header .main-navigation ul .menu-item-has-children .sub-menu {
+        display: block;
+        padding: 26px 0;
+        background-color: #fff; }
+        .site-header .main-navigation ul .menu-item-has-children .sub-menu li {
+          padding: 0 30px 15px 30px;
+          margin-right: 0; }
+          .site-header .main-navigation ul .menu-item-has-children .sub-menu li a {
+            width: 150px;
+            max-width: 100%; }
+            .site-header .main-navigation ul .menu-item-has-children .sub-menu li a::after {
+              content: none; }
+            .site-header .main-navigation ul .menu-item-has-children .sub-menu li a::before {
+              right: 0; }
+        .site-header .main-navigation ul .menu-item-has-children .sub-menu .menu-item-has-children:hover .sub-menu {
+          left: -210px; }
     .site-header .main-navigation .shop-icon-menu {
       margin-right: 50px;
       /* Large Devices, Wide Screens */
@@ -13243,6 +13269,10 @@ h1, h2, h3, h4, h5, h6 {
           top: 57px; } }
       .site-header .main-navigation .search-main svg .st0 {
         fill: #b79054; }
+
+.woocommerce .site-header {
+  -webkit-box-shadow: 0px 10px 7px -12px #000;
+          box-shadow: 0px 10px 7px -12px #000; }
 
 .menu-open .hamburger span {
   background: #fff; }
@@ -14295,5 +14325,71 @@ h1, h2, h3, h4, h5, h6 {
           -webkit-transform: scale(1.2);
                   transform: scale(1.2);
           opacity: 1; }
+
+.content-area {
+  margin-top: 75px; }
+
+.woocommerce .woocommerce-products-header {
+  text-align: center;
+  margin-top: 100px; }
+
+.woocommerce .product-listings-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .woocommerce .product-listings-wrapper .royaltiles-product-listing {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    max-width: 80%; }
+    .woocommerce .product-listings-wrapper .royaltiles-product-listing .woocommerce-ordering {
+      display: none; }
+    .woocommerce .product-listings-wrapper .royaltiles-product-listing .products li {
+      width: 28%;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      padding: 15px; }
+  .woocommerce .product-listings-wrapper .royaltiles-product-sidebar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    max-width: 20%; }
+
+.woocommerce .woocommerce-breadcrumb {
+  width: 100%;
+  padding-right: 15px;
+  margin-top: 40px !important;
+  display: inline-block;
+  padding-left: 50px;
+  -webkit-box-shadow: 0px 3px 2px -2px #b79054;
+          box-shadow: 0px 3px 2px -2px #b79054;
+  padding-bottom: 30px; }
+
+.woocommerce ul.products.columns-3 li.product,
+.woocommerce-page ul.products.columns-3 li.product {
+  width: 28%;
+  text-align: center; }
+
+.woocommerce ul.products li.product .button {
+  background: #62352e;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 18px;
+  margin-top: 15px;
+  border-radius: 3px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+
+.woocommerce ul.products li.product .button:hover {
+  background-color: #b79054; }
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+  font-size: 30px; }
+
+.category-header-content {
+  display: none; }
 
 /*# sourceMappingURL=maps/main.css.map */

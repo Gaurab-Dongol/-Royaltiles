@@ -1,4 +1,5 @@
 <?php
+
 /**
  * RoyalTiles functions and definitions
  *
@@ -7,12 +8,12 @@
  * @package RoyalTiles
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
 
-if ( ! function_exists( 'royaltiles_setup' ) ) :
+if (!function_exists('royaltiles_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,17 +21,18 @@ if ( ! function_exists( 'royaltiles_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function royaltiles_setup() {
+	function royaltiles_setup()
+	{
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on RoyalTiles, use a find and replace
 		 * to change 'royaltiles' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'royaltiles', get_template_directory() . '/languages' );
+		load_theme_textdomain('royaltiles', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+		add_theme_support('automatic-feed-links');
 
 		/*
 		 * Let WordPress manage the document title.
@@ -38,19 +40,19 @@ if ( ! function_exists( 'royaltiles_setup' ) ) :
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
-		add_theme_support( 'title-tag' );
+		add_theme_support('title-tag');
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support('post-thumbnails');
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'royaltiles' ),
+				'menu-1' => esc_html__('Primary', 'royaltiles'),
 			)
 		);
 
@@ -84,7 +86,7 @@ if ( ! function_exists( 'royaltiles_setup' ) ) :
 		);
 
 		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+		add_theme_support('customize-selective-refresh-widgets');
 
 		/**
 		 * Add support for core custom logo.
@@ -100,9 +102,17 @@ if ( ! function_exists( 'royaltiles_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		/**
+		 * WooCommerce suppor
+		 */
+		add_theme_support('woocommerce');
+		add_theme_support('wc-product-gallery-zoom');
+		add_theme_support('wc-product-gallery-lightbox');
+		add_theme_support('wc-product-gallery-slider');
 	}
 endif;
-add_action( 'after_setup_theme', 'royaltiles_setup' );
+add_action('after_setup_theme', 'royaltiles_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -111,22 +121,36 @@ add_action( 'after_setup_theme', 'royaltiles_setup' );
  *
  * @global int $content_width
  */
-function royaltiles_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'royaltiles_content_width', 640 );
+function royaltiles_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('royaltiles_content_width', 640);
 }
-add_action( 'after_setup_theme', 'royaltiles_content_width', 0 );
+add_action('after_setup_theme', 'royaltiles_content_width', 0);
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function royaltiles_widgets_init() {
+function royaltiles_widgets_init()
+{
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'royaltiles' ),
+			'name'          => esc_html__('Sidebar', 'royaltiles'),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'royaltiles' ),
+			'description'   => esc_html__('Add widgets here.', 'royaltiles'),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__('Shop Sidebar', 'royaltiles'),
+			'id'            => 'shop-sidebar',
+			'description'   => esc_html__('Add widgets here.', 'royaltiles'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -134,21 +158,22 @@ function royaltiles_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'royaltiles_widgets_init' );
+add_action('widgets_init', 'royaltiles_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function royaltiles_scripts() {
+function royaltiles_scripts()
+{
 
-	$min = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG === false ) ? '.min' : '';
+	$min = (defined('SCRIPT_DEBUG') && SCRIPT_DEBUG === false) ? '.min' : '';
 
 	$main_css = 'assets/css/main' . $min . '.css';
 	$main_js = 'assets/js/main' . $min . '.js';
 	$vendor_js = 'assets/js/vendor' . $min . '.js';
 
-	wp_enqueue_style( 'royaltiles-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'royaltiles-style', 'rtl', 'replace' );
+	wp_enqueue_style('royaltiles-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_style_add_data('royaltiles-style', 'rtl', 'replace');
 
 	wp_register_style('teko-font-style', 'https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap', '', _S_VERSION, false);
 	wp_enqueue_style('teko-font-style');
@@ -157,20 +182,20 @@ function royaltiles_scripts() {
 
 
 
-	wp_enqueue_script( 'royaltiles-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('royaltiles-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
 	$main_css_file = 'assets/css/main' . $min . '.css';
-	wp_register_style( 'royaltiles-main-style', get_template_directory_uri() . '/' . $main_css_file );
-	wp_enqueue_style( 'royaltiles-main-style' );
+	wp_register_style('royaltiles-main-style', get_template_directory_uri() . '/' . $main_css_file);
+	wp_enqueue_style('royaltiles-main-style');
 
 	//Enqueue js script
 	/* Vendor JS */
-	wp_register_script( 'royaltiles-vendor-script', get_template_directory_uri() . '/' . $vendor_js, array('jquery',), _S_VERSION, true );
-	wp_enqueue_script( 'royaltiles-vendor-script' );
+	wp_register_script('royaltiles-vendor-script', get_template_directory_uri() . '/' . $vendor_js, array('jquery',), _S_VERSION, true);
+	wp_enqueue_script('royaltiles-vendor-script');
 
 	$main_js_file = 'assets/js/main' . $min . '.js';
-	wp_register_script( 'royaltiles-main-script', get_template_directory_uri() . '/' . $main_js_file, array( 'jquery', 'royaltiles-vendor-script' ), _S_VERSION, true );
-	wp_enqueue_script( 'royaltiles-main-script' );
+	wp_register_script('royaltiles-main-script', get_template_directory_uri() . '/' . $main_js_file, array('jquery', 'royaltiles-vendor-script'), _S_VERSION, true);
+	wp_enqueue_script('royaltiles-main-script');
 
 
 
@@ -190,11 +215,11 @@ function royaltiles_scripts() {
 
 
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'royaltiles_scripts' );
+add_action('wp_enqueue_scripts', 'royaltiles_scripts');
 
 /**
  * Implement the Custom Header feature.
@@ -217,9 +242,13 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * WooCommerce Customizations.
+ */
+require get_template_directory() . '/inc/woo-customizations.php';
+
+/**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

@@ -470,7 +470,7 @@ get_header();
                 <a href="#">
                     <div class="product-single">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/maxresdefault.jpg" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        <p class="single-product-detail">Feature Tiles</p>
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
@@ -479,7 +479,7 @@ get_header();
                     <div class="product-single">
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/images/43c05f1189c02595b15223e22c9cc530.jpg" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        <p class="single-product-detail">Wall tiles</p>
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
@@ -488,12 +488,12 @@ get_header();
                     <div class="product-single">
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/images/7c76667f2d4caaedf200faeb77ea024a.jpg" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        <p class="single-product-detail">Floor tiles</p>
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
             <div class="item wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <a href="">
+                <a href="http://localhost/royaltiles/product-category/exclusive-tiles/">
                     <div class="product-single">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/5d4e8183043bfd00010e07d6.jpg" />
                         <p class="single-product-detail">Our Exclusive Tiles</p>
@@ -508,43 +508,9 @@ get_header();
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
-            <div class="item wow animate__fadeInRight" data-wow-duration="1.4s" data-wow-delay="1.4s">
-                <a href="">
-                    <div class="product-single">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/E00000000773.jpg" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
-                    </div><!-- product-single -->
-                </a>
-            </div><!-- item -->
 
-            <div class="item wow animate__fadeInLeft" data-wow-duration="1.6s" data-wow-delay="1.6s">
-                <a href="">
-                    <div class="product-single">
-                        <img
-                            src="<?php echo get_template_directory_uri(); ?>/images/italian-tiles-for-living-room.png.png" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
-                    </div><!-- product-single -->
-                </a>
-            </div><!-- item -->
 
-            <div class="item wow animate__fadeInUp" data-wow-duration="1.8s" data-wow-delay="1.8s">
-                <a href="">
-                    <div class="product-single">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/1-At-Caesarea.jpg" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
-                    </div><!-- product-single -->
-                </a>
-            </div><!-- item -->
 
-            <div class="item wow animate__fadeInRight" data-wow-duration="2s" data-wow-delay="2s">
-                <a href="">
-                    <div class="product-single">
-                        <img
-                            src="<?php echo get_template_directory_uri(); ?>/images/05-Five-Important-Points-While-Choosing-Your-Ceramic-Floor-Tiles.jpg" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
-                    </div><!-- product-single -->
-                </a>
-            </div><!-- item -->
 
         </div><!-- product-list-slider -->
     </div><!-- container -->

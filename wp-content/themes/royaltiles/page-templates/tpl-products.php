@@ -5,7 +5,13 @@
  */
 get_header();
 ?>
-Product page here
+
+<section class="common-modular">
+    <div class="container">
+
+    </div><!-- container -->
+</section>
+<!--  end ofcommon-modular -->
 
 <?php
 get_footer();
