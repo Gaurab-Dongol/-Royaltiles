@@ -35,7 +35,8 @@ get_header();
 
     </div>
     <div class="link-box">
-        <a class="wow slideInDown" data-wow-duration="1.2s" data-wow-delay="1.2s" href="#">Shop Now<span>></span></a>
+        <a class="wow slideInDown" data-wow-duration="1.2s" data-wow-delay="1.2s"
+            href="https://www.royaltiles.com.au/beta/shop/">Shop Now<span>></span></a>
     </div>
     <!-- link-box -->
 </section>
@@ -46,7 +47,7 @@ get_header();
         <div class="title-head wow animate__fadeInUp">
             <div class="line-sep"></div>
             <!-- line-sep -->
-            <h2>Shop by</h2>
+            <h2>Shop product group</h2>
             <div class="line-sep"></div>
             <!-- line-sep -->
         </div>
@@ -54,53 +55,54 @@ get_header();
         <div class="row">
             <div class="col-md-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
                 <div class="shop-meta-wrap">
-                    <a href="#"> <img
-                            src="<?php echo get_template_directory_uri(); ?>/images/Color-Control-of-Ceramic-Tiles.jpg"
+                    <a href="https://www.royaltiles.com.au/beta/product-group/herringbone/"> <img
+                            src="<?php echo get_template_directory_uri(); ?>/images/615QGwxRTnL._AC_SL1000_.jpg"
                             alt="" /></a>
                     <div class="shop-meta-overlay">
-                        <a href="#">Shop All</a>
-                    </div><!-- shop-meta-overlay -->
-                </div><!-- shop-meta-wrap -->
-            </div><!-- col -->
-            <div class="col-md-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                <div class="shop-meta-wrap">
-                    <a href="#"> <img
-                            src="<?php echo get_template_directory_uri(); ?>/images/ceramic-tiles-1000x1000.jpeg"
-                            alt="" /></a>
-                    <div class="shop-meta-overlay">
-                        <a href="#">Shop Color</a>
+                        <a href="https://www.royaltiles.com.au/beta/product-group/herringbone/">HERRINGBONE</a>
                     </div><!-- shop-meta-overlay -->
                 </div><!-- shop-meta-wrap -->
             </div><!-- col -->
             <div class="col-md-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">
                 <div class="shop-meta-wrap">
-                    <a href="#"> <img
-                            src="<?php echo get_template_directory_uri(); ?>/images/6db232317d3b75fccee001c45ff2275c.jpg"
+                    <a href="https://www.royaltiles.com.au/beta/product-group/hexagon/"> <img
+                            src="<?php echo get_template_directory_uri(); ?>/images/chaker-plate-500x500.jpg"
                             alt="" /></a>
                     <div class="shop-meta-overlay">
-                        <a href="#">Shop Shape</a>
+                        <a href="https://www.royaltiles.com.au/beta/product-group/hexagon/"> HEXAGON</a>
+                    </div><!-- shop-meta-overlay -->
+                </div><!-- shop-meta-wrap -->
+            </div><!-- col -->
+            <div class="col-md-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+
+                <div class="shop-meta-wrap">
+                    <a href="https://www.royaltiles.com.au/beta/product-group/3d/"> <img
+                            src="<?php echo get_template_directory_uri(); ?>/images/images.jpg" alt="" /></a>
+                    <div class="shop-meta-overlay">
+                        <a href="https://www.royaltiles.com.au/beta/product-group/3d/">3D</a>
                     </div><!-- shop-meta-overlay -->
                 </div><!-- shop-meta-wrap -->
             </div><!-- col -->
 
+
             <div class="col-md-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="shop-meta-wrap">
-                    <a href="#"> <img
+                    <a href="https://www.royaltiles.com.au/beta/product-group/mix-hex/"> <img
                             src="<?php echo get_template_directory_uri(); ?>/images/3baa07cae0380341e97109be7a537e33.jpg"
                             alt="" /></a>
                     <div class="shop-meta-overlay">
-                        <a href="#">Shop Area</a>
+                        <a href="https://www.royaltiles.com.au/beta/product-group/mix-hex/">MIX HEX</a>
                     </div><!-- shop-meta-overlay -->
                 </div><!-- shop-meta-wrap -->
             </div><!-- col -->
 
             <div class="col-md-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
                 <div class="shop-meta-wrap">
-                    <a href="#"> <img
+                    <a href="https://www.royaltiles.com.au/beta/product-group/stack/"> <img
                             src="<?php echo get_template_directory_uri(); ?>/images/marazzi_crogiolo_d_segni_blend_005.jpg__360x258_q85_crop_subsampling-2.jpg"
                             alt="" /></a>
                     <div class="shop-meta-overlay">
-                        <a href="#">Shop Pattern</a>
+                        <a href="https://www.royaltiles.com.au/beta/product-group/stack/"> STACK</a>
                     </div><!-- shop-meta-overlay -->
                 </div><!-- shop-meta-wrap -->
             </div><!-- col -->
@@ -111,7 +113,7 @@ get_header();
                             src="<?php echo get_template_directory_uri(); ?>/images/82448740-various-ceramic-tiles-samples.jpg"
                             alt="" /></a>
                     <div class="shop-meta-overlay">
-                        <a href="#">Shop Looks</a>
+                        <a href="#">Arch</a>
                     </div><!-- shop-meta-overlay -->
                 </div><!-- shop-meta-wrap -->
             </div><!-- col -->
@@ -138,18 +140,18 @@ get_header();
         <div class="product-slide-two">
             <div class="item wow animate__backInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
                 <p>Marbel Mosaic</p>
-                <a href="#"> <img
-                        src="<?php echo get_template_directory_uri(); ?>/images/67579900-9002-45dc-a894-5e6b9a8b33f0.jpg"
+                <a href="https://www.royaltiles.com.au/beta/product-category/marble/"> <img
+                        src="<?php echo get_template_directory_uri(); ?>/images/ca433792-2fa7-4d54-ab04-81492ae94133_200x200.jpeg"
                         alt="" />
                     <div class="product-details">
                         <div class="detail-author">
                             <span class='title'><strong>Marbel Mosaic</strong></span>
-                            <span>CONCAVE GREY STACK GLOSS XCST269 CHIP SIZE 20X145X8MM SHEET SIZE 299X296 11.30
-                                SHEETS/M2 18SH(1.593M2)/BOX</span>
+                            <span>HERRINGBONE PIETRA GREY HONED CHIP SIZE 64X20X10MM SHEET SIZE 280X248X10MM 14.4
+                                SHEETS/M2 10SH/BOX=0.69M2</span>
                             <span class="size"> 20X145X8 MM</span>
                         </div><!-- detail-author -->
                         <div class="author-price">
-                            <h3>$70</h3>
+                            <h3>$200</h3>
                         </div><!-- author-price -->
                     </div><!-- product-details -->
                     <p class="single-product-detail">View All</p>

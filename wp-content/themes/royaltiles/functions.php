@@ -257,3 +257,32 @@ require get_template_directory() . '/inc/cpt.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function custom_product_tax_list($atts)
+{
+
+	// Inside the function we extract custom taxonomy parameter of our shortcode
+	$args = shortcode_atts(array(
+		'tax' => 'product_cat',
+	), $atts);
+
+	// arguments for function wp_list_categories
+	$terms = get_terms(array(
+		'taxonomy' => $args['tax'],
+		'hide_empty' => true,
+	));
+
+	// We wrap it in unordered list 
+	if (is_array($terms) && !empty($terms)) {
+		echo '<ul>';
+
+		foreach ($terms as $cat) :
+			printf('<li><a href="%s">%s</a></li>', get_term_link($cat->term_id, $args['tax']), $cat->name);
+		endforeach;
+
+
+		echo '</ul>';
+	}
+}
+// Custom taxonomy dropdown option
+add_shortcode('royaltiles_custom_product_tax', 'custom_product_tax_list');
