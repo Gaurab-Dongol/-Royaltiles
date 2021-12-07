@@ -83,8 +83,8 @@ section and everything up until
                                 'theme_location' => 'menu-1',
                                 'menu_id' => 'primary-menu',
                             ]); ?>
-                            <a href="#" class="shop-icon-menu"><i class="fa fa-shopping-cart"
-                                    aria-hidden="true"></i></a>
+                            <a href="https://www.royaltiles.com.au/beta/shop/" class="shop-icon-menu"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                             <a class="search-main" href="#search">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/search.svg" class="svg" />
                             </a>

@@ -194,6 +194,53 @@ supportSVG.init();
     });
 
 
+
+    /* PRODUCT-SLIDER2 */
+
+    $('.product-slide-two').slick({
+        // centerMode: true,
+        slidesToShow: 3,
+        dots: false,
+        arrows:true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: "<span class='left-arrow arrow-common'></span>",
+        nextArrow: "<span class='right-arrow arrow-common'></span>",
+        // customPaging: function (slick, index) {
+        //     return '<a href="javascript:void(0);">0' + (index + 1) + '</a>';
+        // },
+        responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                arrows: true,
+                centerMode: false
+                // slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                arrows: true,
+                centerMode: false,
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                arrows: true,
+                centerMode: false,
+                slidesToShow: 1
+            }
+        }
+        ]
+    });
+
+
+
+
     $('.hamburger').on('click', function () {
         $('body').toggleClass('menu-open');
 

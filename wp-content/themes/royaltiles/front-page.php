@@ -121,105 +121,93 @@ get_header();
 </section>
 <!-- end of shop-category -->
 
-<section class="product-slider-wrap">
+
+
+
+
+<section class="product-slider-wrap category-section-product">
     <div class="container">
-        <div class="product-slider">
+        <div class="title-head wow animate__fadeInUp">
+            <div class="line-sep"></div>
+            <!-- line-sep -->
+            <h2>our mosaic range</h2>
+            <div class="line-sep"></div>
+            <!-- line-sep -->
+        </div>
+        <!-- title-head -->
+        <div class="product-slide-two">
             <div class="item wow animate__backInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                <p>Aussie made</p>
+                <p>Marbel Mosaic</p>
                 <a href="#"> <img
-                        src="<?php echo get_template_directory_uri(); ?>/images/cement-tiles-encaustic-greek-terazzo-600w-1717604935.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/images/67579900-9002-45dc-a894-5e6b9a8b33f0.jpg"
                         alt="" />
                     <div class="product-details">
                         <div class="detail-author">
-                            <span>Navy</span>
-                            <span>Encaustic</span>
-                            <span>300 x 300</span>
+                            <span class='title'><strong>Marbel Mosaic</strong></span>
+                            <span>CONCAVE GREY STACK GLOSS XCST269 CHIP SIZE 20X145X8MM SHEET SIZE 299X296 11.30
+                                SHEETS/M2 18SH(1.593M2)/BOX</span>
+                            <span class="size"> 20X145X8 MM</span>
                         </div><!-- detail-author -->
                         <div class="author-price">
-                            <h3>$40</h3>
+                            <h3>$70</h3>
                         </div><!-- author-price -->
                     </div><!-- product-details -->
-                    <p class="single-product-detail">See Range</p>
+                    <p class="single-product-detail">View All</p>
                 </a>
             </div><!-- item -->
+
             <div class="item wow animate__backInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                <p>Aussie made</p>
+                <p>Porcelain Mosaic</p>
                 <a href="#"> <img
-                        src="<?php echo get_template_directory_uri(); ?>/images/handmade-encaustic-tulips-blue-fleur-cement-tiles-2.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/images/50e51dfe-bf78-464b-a5ed-4102b3394aa5.png"
                         alt="" />
                     <div class="product-details">
                         <div class="detail-author">
-                            <span>Navy</span>
-                            <span>Encaustic</span>
-                            <span>300 x 300</span>
+                            <span class='title'><strong>Porcelain Mosaic</strong></span>
+                            <span>BASKETWEAVE CARRARA + THASSOS DOT SHEET SIZE 305X305X7MM 10.75 SHEETS/M2 10SH/BOX
+                                =0.931M2</span>
+                            <span class="size"> 305X305X7 MM</span>
                         </div><!-- detail-author -->
                         <div class="author-price">
-                            <h3>$40</h3>
+                            <h3>$90</h3>
                         </div><!-- author-price -->
                     </div><!-- product-details -->
-                    <p class="single-product-detail">See Range</p>
+                    <p class="single-product-detail">View All</p>
                 </a>
             </div><!-- item -->
+
             <div class="item wow animate__backInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                <p>Aussie made</p>
+                <p>Pool Mosaic</p>
                 <a href="#"> <img
-                        src="<?php echo get_template_directory_uri(); ?>/images/paris-comedie-porcelain-tile.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/images/303c9e21-c892-4d98-b07f-ef471b97420c-scaled.jpeg"
                         alt="" />
                     <div class="product-details">
                         <div class="detail-author">
-                            <span>Navy</span>
-                            <span>Encaustic</span>
-                            <span>300 x 300</span>
+                            <span class='title'><strong>Pool Mosaic</strong></span>
+                            <span>HEXAGON CALACATTA GOLD HONED CHIP SIZE 48X48X7MM SHEET SIZE 298X305MM 11 SHEETS/M2
+                                10SHEETS/BOX=0.909M2</span>
+                            <span class="size"> 0.305 x 0.298 x 0.07 (meters)</span>
                         </div><!-- detail-author -->
                         <div class="author-price">
-                            <h3>$40</h3>
+                            <h3>$200</h3>
                         </div><!-- author-price -->
                     </div><!-- product-details -->
-                    <p class="single-product-detail">See Range</p>
+                    <p class="single-product-detail">View All</p>
                 </a>
             </div><!-- item -->
-            <div class="item wow animate__backInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">
-                <p>Aussie made</p>
-                <a href="#"> <img
-                        src="<?php echo get_template_directory_uri(); ?>/images/istockphoto-545805508-612x612.jpg"
-                        alt="" />
-                    <div class="product-details">
-                        <div class="detail-author">
-                            <span>Navy</span>
-                            <span>Encaustic</span>
-                            <span>300 x 300</span>
-                        </div><!-- detail-author -->
-                        <div class="author-price">
-                            <h3>$40</h3>
-                        </div><!-- author-price -->
-                    </div><!-- product-details -->
-                    <p class="single-product-detail">See Range</p>
-                </a>
-            </div><!-- item -->
-            <div class="item wow animate__backInUp" data-wow-duration="1s" data-wow-delay="1s">
-                <p>Aussie made</p>
-                <a href="#"> <img
-                        src="<?php echo get_template_directory_uri(); ?>/images/paris-comedie-porcelain-tile.jpg"
-                        alt="" />
-                    <div class="product-details">
-                        <div class="detail-author">
-                            <span>Navy</span>
-                            <span>Encaustic</span>
-                            <span>300 x 300</span>
-                        </div><!-- detail-author -->
-                        <div class="author-price">
-                            <h3>$40</h3>
-                        </div><!-- author-price -->
-                    </div><!-- product-details -->
-                    <p class="single-product-detail">See Range</p>
-                </a>
-            </div><!-- item -->
-
-
         </div><!-- product-slider -->
     </div><!-- container -->
 </section>
 <!-- end of product-slider-wrap -->
+
+
+
+
+
+
+
+
+
 
 <section class="trending-section">
     <div class="container">
@@ -467,44 +455,47 @@ get_header();
     <div class="container">
         <div class="product-list-slide">
             <div class="item wow animate__fadeInLeft" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                <a href="#">
+                <a href="https://www.royaltiles.com.au/beta/product-category/hexagon-pietra/">
                     <div class="product-single">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/maxresdefault.jpg" />
-                        <p class="single-product-detail">Feature Tiles</p>
+                        <img
+                            src="<?php echo get_template_directory_uri(); ?>/images/c637dc90-67ab-46a3-a15d-469785517fb3.jpeg" />
+                        <p class="single-product-detail">HEXAGON PIETRA</p>
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
             <div class="item wow animate__fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                <a href="">
+                <a href="https://www.royaltiles.com.au/beta/product-category/hercarh/">
                     <div class="product-single">
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/images/43c05f1189c02595b15223e22c9cc530.jpg" />
-                        <p class="single-product-detail">Wall tiles</p>
+                            src="<?php echo get_template_directory_uri(); ?>/images/87fa8b52-ed36-4fc9-9bde-67b398a7b218.jpeg" />
+                        <p class="single-product-detail">HERCARH</p>
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
             <div class="item wow animate__fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.8s">
-                <a href="">
+                <a href="https://www.royaltiles.com.au/beta/product-category/concave/">
                     <div class="product-single">
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/images/7c76667f2d4caaedf200faeb77ea024a.jpg" />
-                        <p class="single-product-detail">Floor tiles</p>
+                            src="<?php echo get_template_directory_uri(); ?>/images/7c93940a-9fcb-47c6-8577-092704606775.png" />
+                        <p class="single-product-detail">CONCAVE</p>
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
             <div class="item wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <a href="http://localhost/royaltiles/product-category/exclusive-tiles/">
+                <a href="https://www.royaltiles.com.au/beta/product-category/concarh/">
                     <div class="product-single">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/5d4e8183043bfd00010e07d6.jpg" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        <img
+                            src="<?php echo get_template_directory_uri(); ?>/images/6cb7ca58-2925-4890-a6c2-73344b2a846e.jpeg" />
+                        <p class="single-product-detail">CONCARH</p>
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
             <div class="item wow animate__fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
-                <a href="">
+                <a href="https://www.royaltiles.com.au/beta/product-category/basketweave/">
                     <div class="product-single">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/tile-selection-living-room.jpg" />
-                        <p class="single-product-detail">Our Exclusive Tiles</p>
+                        <img
+                            src="<?php echo get_template_directory_uri(); ?>/images/1ec2c4c9-861e-4c6f-9969-e348a44255ad.jpg" />
+                        <p class="single-product-detail">BASKETWEAVE</p>
                     </div><!-- product-single -->
                 </a>
             </div><!-- item -->
